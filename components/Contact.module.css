@@ -1,0 +1,110 @@
+/* Contact Section */
+.contactContent {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactText {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.contactChannels {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.contactChannel {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contactChannelIcon {
+    font-size: 1.25rem;
+}
+
+.channelEmail {
+    background-color: #ea4335;
+    color: #fff;
+}
+
+.channelEmail:hover {
+    background-color: transparent;
+    color: #ea4335;
+    border-color: #ea4335;
+}
+
+.channelWhatsapp {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.channelWhatsapp:hover {
+    background-color: transparent;
+    color: #25d366;
+    border-color: #25d366;
+}
+
+.channelTelegram {
+    background-color: #0088cc;
+    color: #fff;
+}
+
+.channelTelegram:hover {
+    background-color: transparent;
+    color: #0088cc;
+    border-color: #0088cc;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.socialLink {
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+    opacity: 0.8;
+}
+
+.socialLink:hover {
+    opacity: 1;
+}
+
+.socialLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--foreground);
+    transition: width 0.3s;
+}
+
+.socialLink:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .contactText {
+        font-size: 1rem;
+    }
+}

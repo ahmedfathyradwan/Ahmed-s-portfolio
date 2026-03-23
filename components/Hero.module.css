@@ -1,0 +1,64 @@
+/* Hero Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.heroTitle {
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+    animation: fadeUp 0.8s ease-out forwards;
+    opacity: 0;
+    line-height: 1.1;
+}
+
+.heroSubtitle {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+    color: var(--accent);
+    margin-bottom: 2rem;
+    animation: fadeUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+    font-weight: 300;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroTitle {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .heroSubtitle {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .heroTitle {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    .heroSubtitle {
+        font-size: clamp(0.95rem, 2.5vw, 1.25rem);
+    }
+}

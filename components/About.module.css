@@ -1,0 +1,26 @@
+/* About Section */
+.aboutContent {
+    max-width: 800px;
+}
+
+.aboutActions {
+    margin-top: 2rem;
+}
+
+.aboutText {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+[data-theme='dark'] .aboutText {
+    color: #a3a3a3;
+}
+
+@media (max-width: 480px) {
+    .aboutText {
+        font-size: 1rem;
+    }
+}
