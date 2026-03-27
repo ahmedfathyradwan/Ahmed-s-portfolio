@@ -12,22 +12,19 @@ export default function Contact() {
                         If you have a project that needs some coding touch, or just want to chat about tech, feel free to reach out!
                     </p>
 
-                    <div className={styles.contactChannels}>
-                        <a href="mailto:[ahmedfathyradwan1@gmail.com]" className={`${styles.contactChannel} ${styles.channelEmail}`}>
-                            <SiGmail className={styles.contactChannelIcon} />
-                            <span>Email</span>
-                        </a>
-                        <a href="https://wa.me/201205040743" className={`${styles.contactChannel} ${styles.channelWhatsapp}`} target="_blank" rel="noopener noreferrer">
-                            <SiWhatsapp className={styles.contactChannelIcon} />
-                            <span>WhatsApp</span>
-                        </a>
-                        <a href="https://t.me/ah_fathy_74" className={`${styles.contactChannel} ${styles.channelTelegram}`} target="_blank" rel="noopener noreferrer">
-                            <SiTelegram className={styles.contactChannelIcon} />
-                            <span>Telegram</span>
-                        </a>
-                    </div>
-
                     <div className={styles.socialLinks}>
+                        <a href="mailto:[ahmedfathyradwan1@gmail.com]" className={styles.socialLink}>
+                            {/* <SiGmail /> */}
+                            Gmail
+                        </a>
+                        <a href="https://wa.me/201205040743" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
+                            {/* <SiWhatsapp />  */}
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/ah_fathy_74" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
+                            {/* <SiTelegram /> */}
+                            Telegram
+                        </a>
                         <a href="#" className={styles.socialLink}>LinkedIn</a>
                         <a href="https://github.com/ahmedfathyradwan" className={styles.socialLink}>GitHub</a>
                         <a href="#" className={styles.socialLink}>Twitter</a>

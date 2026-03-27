@@ -18,6 +18,14 @@ export default function Projects() {
             github: "https://github.com/ahmedfathyradwan/shatabha",
             demo: "https://shatabha.vercel.app/home",
         },
+        {
+            title: "Task Manager",
+            desc: "A comprehensive task management dashboard with full CRUD functionality, real-time status updates, and category organization for efficient productivity.",
+            tags: ["Next.js", "Node.js", "MongoDB", "CSS Modules"],
+            img: "https://placehold.co/600x400/171717/FFF?text=Task+Manager",
+            github: "https://github.com/ahmedfathyradwan/task-manager-frontend",
+            demo: "https://task-manager-frontend-three-xi.vercel.app/",
+        },
     ];
 
     return (
@@ -28,7 +36,17 @@ export default function Projects() {
                     {projects.map((p, i) => (
                         <div key={i} className={styles.projectCard}>
                             <div className={styles.projectImage}>
-                                <img src={p.img} alt={p.title} width="600" height="400" loading="lazy" />
+                                <div className={styles.iframeWrapper}>
+                                    <iframe 
+                                        src={p.demo} 
+                                        title={p.title} 
+                                        className={styles.projectIframe}
+                                        loading="lazy"
+                                        frameBorder="0"
+                                    />
+                                    {/* Fallback/Placeholder while loading or if blocked */}
+                                    <img src={p.img} alt={p.title} className={styles.iframePlaceholder} />
+                                </div>
                             </div>
                             <div className={styles.projectContent}>
                                 <h3>{p.title}</h3>

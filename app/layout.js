@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${outfit.variable}`}>
+    <html lang="en" data-theme="dark" className={`${inter.variable} ${outfit.variable}`}>
       <body>
         <Navbar />
         <main>{children}</main>

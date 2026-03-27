@@ -12,7 +12,7 @@ export default function About() {
                         I love solving complex problems and turning ideas into reality through code.
                     </p>
                     <div className={styles.aboutActions}>
-                        <a href="/cv.pdf" className="btn" download>Download CV</a>
+                        <a href="/AhmedFathyResume.pdf" className="btn" download>Download CV</a>
                     </div>
                 </div>
             </div>
