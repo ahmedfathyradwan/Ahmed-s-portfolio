@@ -13,10 +13,8 @@ export default function Contact() {
                     </p>
 
                     <div className={styles.socialLinks}>
-                        <a href="mailto:[ahmedfathyradwan1@gmail.com]" className={styles.socialLink}>
-                            {/* <SiGmail /> */}
-                            Gmail
-                        </a>
+                        <a href="https://github.com/ahmedfathyradwan" className={styles.socialLink}>GitHub</a>
+                        <a href="https://www.linkedin.com/in/ahmed-fathy-b484702a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className={styles.socialLink}>LinkedIn</a>
                         <a href="https://wa.me/201205040743" className={styles.socialLink} target="_blank" rel="noopener noreferrer">
                             {/* <SiWhatsapp />  */}
                             WhatsApp
@@ -25,9 +23,11 @@ export default function Contact() {
                             {/* <SiTelegram /> */}
                             Telegram
                         </a>
-                        <a href="#" className={styles.socialLink}>LinkedIn</a>
-                        <a href="https://github.com/ahmedfathyradwan" className={styles.socialLink}>GitHub</a>
-                        <a href="#" className={styles.socialLink}>Twitter</a>
+                                                <a href="mailto:[ahmedfathyradwan1@gmail.com]" className={styles.socialLink}>
+                            {/* <SiGmail /> */}
+                            Gmail
+                        </a>
+                        {/* <a href="#" className={styles.socialLink}>Twitter</a> */}
                     </div>
                 </div>
             </div>

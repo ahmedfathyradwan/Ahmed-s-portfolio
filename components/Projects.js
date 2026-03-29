@@ -3,20 +3,20 @@ import styles from "./Projects.module.css";
 export default function Projects() {
     const projects = [
         {
-            title: "Pizza Palace Menu",
-            desc: "An interactive digital menu for a pizza restaurant. Browse categories, customize orders, and explore the full menu with a beautiful and responsive UI.",
-            tags: ["Next.js", "React", "CSS", "Responsive"],
-            img: "https://placehold.co/600x400/171717/FFF?text=Pizza+Menu",
-            github: "https://github.com/ahmedfathyradwan/pizza-ecom",
-            demo: "https://pizza-ecom-gamma.vercel.app",
-        },
-        {
             title: "ServiceBridge",
             desc: "A freelance-style service marketplace platform where clients post needs and providers offer their skills. Features listings, profiles, and a clean brokerage flow.",
             tags: ["Next.js", "Node.js", "PostgreSQL", "Prisma"],
             img: "https://placehold.co/600x400/171717/FFF?text=ServiceBridge",
             github: "https://github.com/ahmedfathyradwan/shatabha",
             demo: "https://shatabha.vercel.app/home",
+        },
+        {
+            title: "Pizza Palace Menu",
+            desc: "An interactive digital menu for a pizza restaurant. Browse categories, customize orders, and explore the full menu with a beautiful and responsive UI.",
+            tags: ["Next.js", "React", "CSS", "Responsive"],
+            img: "https://placehold.co/600x400/171717/FFF?text=Pizza+Menu",
+            github: "https://github.com/ahmedfathyradwan/pizza-ecom",
+            demo: "https://pizza-ecom-gamma.vercel.app",
         },
         {
             title: "Task Manager",

@@ -9,7 +9,7 @@ export default function Hero() {
                     <span className={styles.highlight}>Ahmed Fathy</span>
                 </h1>
                 <p className={styles.heroSubtitle}>
-                    Full Stack Web Developer
+                    Frontend Next.js Developer
                 </p>
             </div>
         </section>

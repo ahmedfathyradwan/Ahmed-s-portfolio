@@ -85,8 +85,11 @@ main {
 
 /* Shared button */
 .btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px 20px;
   background-color: var(--foreground);
   color: var(--background);
   font-weight: 600;

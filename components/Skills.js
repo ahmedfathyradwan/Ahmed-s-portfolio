@@ -3,34 +3,34 @@ import {
     SiReact,
     SiJavascript,
     SiTypescript,
-    SiNodedotjs,
     SiGit,
     SiGithub,
     SiTailwindcss,
-    SiMongodb,
-    SiPostgresql,
-    SiPrisma,
     SiHtml5,
     SiFigma,
+    SiFramer,
+    SiJest,
+    SiDocker,
+    SiVercel,
 } from "react-icons/si";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaLightbulb } from "react-icons/fa";
 import styles from "./Skills.module.css";
 
 const skills = [
-    { name: "Next.js", icon: SiNextdotjs },
-    { name: "React", icon: SiReact },
     { name: "JavaScript", icon: SiJavascript },
+    { name: "React", icon: SiReact },
+    { name: "Next.js", icon: SiNextdotjs },
     { name: "TypeScript", icon: SiTypescript },
-    { name: "Node.js", icon: SiNodedotjs },
+    { name: "HTML5", icon: SiHtml5 },
+    { name: "UI/UX", icon: SiFigma },
+    { name: "Tailwind CSS", icon: SiTailwindcss },
+    { name: "Animations", icon: SiFramer },
+    { name: "Jest", icon: SiJest },
     { name: "Git", icon: SiGit },
     { name: "GitHub", icon: SiGithub },
-    { name: "Tailwind CSS", icon: SiTailwindcss },
-    { name: "MongoDB", icon: SiMongodb },
-    { name: "PostgreSQL", icon: SiPostgresql },
-    { name: "Prisma", icon: SiPrisma },
-    { name: "HTML5", icon: SiHtml5 },
-    { name: "CSS3", icon: FaCss3Alt },
-    { name: "Figma", icon: SiFigma },
+    { name: "Docker", icon: SiDocker },
+    { name: "Vercel", icon: SiVercel },
+    { name: "Problem Solving", icon: FaLightbulb },
 ];
 
 export default function Skills() {
