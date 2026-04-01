@@ -1,17 +1,40 @@
-/* About Section */
 .aboutContent {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+.aboutImage {
+    flex-shrink: 0;
+}
+
+.profileImage {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profileImage:hover {
+    transform: scale(1.02);
+}
+
+.aboutInfo {
+    flex: 1;
 }
 
 .aboutActions {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .aboutText {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.7;
-    max-width: 800px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--accent);
 }
 
@@ -19,8 +42,26 @@
     color: #a3a3a3;
 }
 
+@media (max-width: 900px) {
+    .aboutContent {
+        flex-direction: column;
+        text-align: center;
+        gap: 2.5rem;
+    }
+
+    .profileImage {
+        width: 250px;
+        height: 250px;
+    }
+}
+
 @media (max-width: 480px) {
     .aboutText {
         font-size: 1rem;
+    }
+
+    .profileImage {
+        width: 250px;
+        height: 250px;
     }
 }
