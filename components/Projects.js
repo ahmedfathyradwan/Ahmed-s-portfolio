@@ -5,7 +5,7 @@ export default function Projects() {
         {
             title: "Pizza Palace Menu",
             desc: "An interactive digital menu for a pizza restaurant. Browse categories, customize orders, and explore the full menu with a beautiful and responsive UI.",
-            tags: ["Next.js","CSS", "Responsive"],
+            features: ["Online Visa Payment", "Admin Control Dashboard", "Interactive Digital Menu", "Integrated Shopping Cart"],
             img: "https://placehold.co/600x400/171717/FFF?text=Pizza+Menu",
             github: "https://github.com/ahmedfathyradwan/pizza-ecom",
             demo: "https://pizza-ecom-gamma.vercel.app",
@@ -13,7 +13,7 @@ export default function Projects() {
         {
             title: "ServiceBridge",
             desc: "A freelance-style service marketplace platform where clients post needs and providers offer their skills. Features listings, profiles, and a clean brokerage flow.",
-            tags: ["Next.js","CSS","Responsive"],
+            features: ["Admin Dashboard", "Multi-tier User System", "Dynamic User Profiles", "Secure Authentication"],
             img: "https://placehold.co/600x400/171717/FFF?text=ServiceBridge",
             github: "https://github.com/ahmedfathyradwan/shatabha",
             demo: "https://shatabha.vercel.app/home",
@@ -21,7 +21,7 @@ export default function Projects() {
         {
             title: "Task Manager",
             desc: "A comprehensive task management dashboard with full CRUD functionality, real-time status updates, and category organization for efficient productivity.",
-            tags: ["Next.js", "Node.js", "MongoDB", "CSS Modules"],
+            features: ["Multi-status Task Tracking", "Persistent Database Storage", "Real-time CRUD Workflow"],
             img: "https://placehold.co/600x400/171717/FFF?text=Task+Manager",
             github: "https://github.com/ahmedfathyradwan/task-manager-frontend",
             demo: "https://task-manager-frontend-three-xi.vercel.app/",
@@ -51,9 +51,9 @@ export default function Projects() {
                             <div className={styles.projectContent}>
                                 <h3>{p.title}</h3>
                                 <p>{p.desc}</p>
-                                <div className={styles.tags}>
-                                    {p.tags.map((t, idx) => (
-                                        <span key={idx} className={styles.tag}>{t}</span>
+                                <div className={styles.features}>
+                                    {p.features.map((f, idx) => (
+                                        <span key={idx} className={styles.feature}>{f}</span>
                                     ))}
                                 </div>
                                 <div className={styles.projectLinks}>

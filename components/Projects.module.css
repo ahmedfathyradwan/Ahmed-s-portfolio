@@ -101,13 +101,13 @@
     color: #a3a3a3;
 }
 
-.tags {
+.features {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.tag {
+.feature {
     font-size: 0.75rem;
     padding: 0.25rem 0.75rem;
     background-color: #f5f5f5;
@@ -116,7 +116,7 @@
     color: #333;
 }
 
-[data-theme='dark'] .tag {
+[data-theme='dark'] .feature {
     background-color: #262626;
     color: #ededed;
 }
