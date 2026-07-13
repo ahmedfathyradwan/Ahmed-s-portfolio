@@ -26,6 +26,14 @@ export default function Projects() {
             github: "https://github.com/ahmedfathyradwan/task-manager-frontend",
             demo: "https://task-manager-frontend-three-xi.vercel.app/",
         },
+        {
+            title: "Orders Manager",
+            desc: "Orders Manager",
+            features: ["Multi-status Task Tracking", "Persistent Database Storage", "Real-time CRUD Workflow"],
+            img: "https://placehold.co/600x400/171717/FFF?text=Orders+Manager",
+            github: "https://github.com/ahmedfathyradwan/fathytincan",
+            demo: "https://fathytincan.vercel.app/",
+        }
     ];
 
     return (
@@ -37,9 +45,9 @@ export default function Projects() {
                         <div key={i} className={styles.projectCard}>
                             <div className={styles.projectImage}>
                                 <div className={styles.iframeWrapper}>
-                                    <iframe 
-                                        src={p.demo} 
-                                        title={p.title} 
+                                    <iframe
+                                        src={p.demo}
+                                        title={p.title}
                                         className={styles.projectIframe}
                                         loading="lazy"
                                         frameBorder="0"
